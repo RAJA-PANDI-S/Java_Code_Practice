@@ -14,21 +14,17 @@ public class MultiplyUsingAddition {
         for (int i = 0; i < iterations; i++) {
             result += addValue;
         }
-
         // Handle negative numbers
         if ((a < 0 && b >= 0) || (a >= 0 && b < 0)) {
             result = -result;
         }
-
         return result;
     }
-
     public static void main(String[] args) {
-        int num1 = -9;
-        int num2 = -8;
-
-        int product = multiply(num1, num2);
-        System.out.println("Multiplication of " + num1 + " and " + num2 + " is: " + product);
+        int a = -5;
+        int b = 5;
+        int product = multiply(a, b);
+        System.out.println("Multiplication of " + a + " and " + b + " is: " + product);
     }
 }
 
